@@ -52,12 +52,12 @@ Reads every spec file and gives you an honest quality report. Flags real issues 
 
 ```bash
 # 1. Clone this repo
-git clone git@github.com:saidcueter11/claude-skills.git ~/claude-skills
+git clone git@github.com:saidcueter11/e2e-skills.git ~/e2e-skills
 
 # 2. Symlink into Claude Code's skills directory
 mkdir -p ~/.claude/skills
-ln -s ~/claude-skills/add-e2e-tests ~/.claude/skills/add-e2e-tests
-ln -s ~/claude-skills/e2e-audit ~/.claude/skills/e2e-audit
+ln -s ~/e2e-skills/add-e2e-tests ~/.claude/skills/add-e2e-tests
+ln -s ~/e2e-skills/e2e-audit ~/.claude/skills/e2e-audit
 ```
 
 Restart Claude Code once. The skills are now available in every project.
@@ -78,7 +78,7 @@ ls -la ~/.claude/skills/
 When a skill is updated, one command syncs everyone:
 
 ```bash
-cd ~/claude-skills && git pull
+cd ~/e2e-skills && git pull
 ```
 
 The symlinks propagate changes immediately — no reinstall, no restart.
